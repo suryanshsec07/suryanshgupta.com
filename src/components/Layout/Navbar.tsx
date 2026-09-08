@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
       padding: isScrolled ? '0.75rem 0' : '1.25rem 0',
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="#" style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '0.5px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '2px' }}>
+        <a href="#" aria-label="Home" style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '0.5px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '2px' }}>
           <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)' }}>{'<'}</span>
           SG
           <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)' }}>{'/>'}</span>
