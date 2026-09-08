@@ -3,14 +3,14 @@ import { Network, ShieldAlert, Search, Activity, Crosshair, Target, Unlock, Shie
 
 const SecurityFocus: React.FC = () => {
   const focuses = [
-    { name: 'Network Security', icon: <Network size={22} />, desc: 'Protecting network infrastructure' },
-    { name: 'Vulnerability Assessment', icon: <ShieldAlert size={22} />, desc: 'Identifying security weaknesses' },
-    { name: 'Threat Analysis', icon: <Search size={22} />, desc: 'Analyzing potential threats' },
-    { name: 'Traffic Analysis', icon: <Activity size={22} />, desc: 'Monitoring network traffic' },
-    { name: 'Network Scanning', icon: <Crosshair size={22} />, desc: 'Discovering network assets' },
-    { name: 'Enumeration', icon: <Target size={22} />, desc: 'Gathering system intelligence' },
-    { name: 'Privilege Escalation', icon: <Unlock size={22} />, desc: 'Understanding access control' },
-    { name: 'Basic Exploitation', icon: <Shield size={22} />, desc: 'Learning attack vectors' },
+    { name: 'Network Security', icon: <Network size={22} />, desc: 'Understanding network security concepts' },
+    { name: 'Vulnerability Basics', icon: <ShieldAlert size={22} />, desc: 'Learning how common security weaknesses are identified' },
+    { name: 'Security Monitoring', icon: <Search size={22} />, desc: 'Learning to identify suspicious activity' },
+    { name: 'Traffic Analysis', icon: <Activity size={22} />, desc: 'Learning to analyze network traffic' },
+    { name: 'Network Scanning', icon: <Crosshair size={22} />, desc: 'Discovering devices and services' },
+    { name: 'Cybersecurity Basics', icon: <Target size={22} />, desc: 'Building foundational cybersecurity knowledge' },
+    { name: 'Linux & System Security', icon: <Unlock size={22} />, desc: 'Exploring Linux and system security' },
+    { name: 'Basic Exploitation', icon: <Shield size={22} />, desc: 'Learning basic security concepts and attack vectors' },
   ];
 
   return (
