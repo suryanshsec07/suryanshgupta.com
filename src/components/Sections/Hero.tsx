@@ -102,29 +102,13 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Profile Photo + Stats */}
-          <div className="fade-up stagger-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2.5rem', flex: '0 0 auto' }}>
+          {/* Right: Profile Photo */}
+          <div className="fade-up stagger-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: '0 0 auto' }}>
             <div className="profile-container">
               <div className="profile-glow" />
               <div className="profile-glow-inner" />
               <div className="profile-image">
                 <img src="/profile.jpg" alt="Suryansh Gupta - Cybersecurity Enthusiast" />
-              </div>
-            </div>
-
-            {/* Quick Stats */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', width: '100%', maxWidth: '300px' }}>
-              <div className="stat-card">
-                <div className="stat-number">4+</div>
-                <div className="stat-label">Certs</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">5+</div>
-                <div className="stat-label">Tools</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">2+</div>
-                <div className="stat-label">Roles</div>
               </div>
             </div>
           </div>
