@@ -4,6 +4,16 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
+      title: 'Cybersecurity Intern',
+      company: 'Cyber Secure India',
+      location: 'Remote',
+      period: 'September 2026 – Present',
+      type: 'Ongoing',
+      responsibilities: [
+        'Currently gaining practical exposure to cybersecurity concepts, security tools, and hands-on learning through structured training and practical activities.'
+      ]
+    },
+    {
       title: 'Google Student Ambassador',
       company: 'Google',
       location: 'Remote',
