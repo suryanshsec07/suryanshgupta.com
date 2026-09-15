@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
       period: 'September 2026 – Present',
       type: 'Ongoing',
       responsibilities: [
-        'Currently gaining practical exposure to cybersecurity concepts, security tools, and hands-on learning through structured training and practical activities.'
+        <>Hands-on cybersecurity training covering OS & Networking, AI in Cyber Security, Reconnaissance, Web Security and Pentesting. Practical exposure to tools like <strong>Burp Suite, Nmap and Metasploit</strong>, along with platforms such as <strong>TryHackMe and Hack The Box</strong>. Exploring Linux/Windows Privilege Escalation, Mobile Pentesting, OSINT, Cloud Security and Digital Forensics through assignments and mentor-guided practical learning.</>
       ]
     },
     {
