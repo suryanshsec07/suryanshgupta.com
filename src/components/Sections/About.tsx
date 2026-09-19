@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 {'>'} cat about.txt
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem' }}>
-                I am a B.Tech Information Technology student specializing in cybersecurity. My focus is on understanding how networks operate, how they can be compromised, and how to defend them effectively.
+                I am Suryansh Gupta, a B.Tech IT student at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, specializing in cybersecurity. My focus is on understanding how networks operate, how they can be compromised, and how to defend them effectively.
               </p>
             </div>
             

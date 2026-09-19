@@ -31,10 +31,10 @@ const Hero: React.FC = () => {
               <h2 style={{ fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', color: 'var(--text-secondary)', marginBottom: '1.5rem', fontWeight: 500, minHeight: '2.2em' }}>
                 <TypingEffect
                   strings={[
-                    'Cybersecurity Enthusiast',
+                    'Cybersecurity Student',
                     'Network Security Explorer',
                     'Vulnerability Researcher',
-                    'Security Tool Developer',
+                    'Google Student Ambassador',
                   ]}
                   speed={70}
                   deleteSpeed={35}
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 />
               </h2>
               <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', lineHeight: 1.8, maxWidth: '560px' }}>
-                B.Tech Information Technology student building practical experience in cybersecurity, network security, vulnerability assessment, and security tooling.
+                I'm Suryansh Gupta, a B.Tech IT student at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, building my skills in cybersecurity through hands-on projects, internships, and practical learning. I'm also a Google Student Ambassador.
               </p>
             </div>
 
