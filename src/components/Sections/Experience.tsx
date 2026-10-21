@@ -5,12 +5,12 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       title: 'Cybersecurity Intern',
-      company: 'Cyber Secure India',
+      company: 'Networkwalks IT Solutions & Training',
       location: 'Remote',
-      period: 'September 2026 – Present',
+      period: 'October 2026 – Present',
       type: 'Ongoing',
       responsibilities: [
-        <>Hands-on cybersecurity training covering OS & Networking, AI in Cyber Security, Reconnaissance, Web Security and Pentesting. Practical exposure to tools like <strong>Burp Suite, Nmap and Metasploit</strong>, along with platforms such as <strong>TryHackMe and Hack The Box</strong>. Exploring Linux/Windows Privilege Escalation, Mobile Pentesting, OSINT, Cloud Security and Digital Forensics through assignments and mentor-guided practical learning.</>
+        'Working as a Cybersecurity Intern at Networkwalks IT Solutions & Training to strengthen practical cybersecurity knowledge, develop hands-on technical skills, and gain industry exposure.'
       ]
     },
     {
