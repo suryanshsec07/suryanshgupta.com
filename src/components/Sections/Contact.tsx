@@ -5,8 +5,8 @@ import { GithubIcon, LinkedinIcon } from '../Icons';
 const Contact: React.FC = () => {
   const links = [
     { label: 'Email', value: 'suryanshgupta1250@gmail.com', href: 'mailto:suryanshgupta1250@gmail.com', icon: <Mail size={20} /> },
-    { label: 'GitHub', value: 'suryanshsec07', href: 'https://github.com/suryanshsec07', icon: <GithubIcon size={20} /> },
-    { label: 'LinkedIn', value: 'suryanshsec07', href: 'https://linkedin.com/in/suryanshsec07', icon: <LinkedinIcon size={20} /> },
+    { label: 'GitHub', value: 'GitHub', href: 'https://github.com/suryanshsec07', icon: <GithubIcon size={20} /> },
+    { label: 'LinkedIn', value: 'LinkedIn', href: 'https://linkedin.com/in/suryanshsec07', icon: <LinkedinIcon size={20} /> },
   ];
 
   return (
