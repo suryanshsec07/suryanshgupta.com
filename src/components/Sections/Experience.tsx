@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
       period: 'October 2026 – Present',
       type: 'Ongoing',
       responsibilities: [
-        'Working as a Cybersecurity Intern at Networkwalks IT Solutions & Training to strengthen practical cybersecurity knowledge, develop hands-on technical skills, and gain industry exposure.'
+        'Currently interning at Networkwalks IT Solutions & Training. I\'m working on building practical cybersecurity skills and getting real industry experience.'
       ]
     },
     {
@@ -20,10 +20,10 @@ const Experience: React.FC = () => {
       period: 'May 2026 – Present',
       type: 'Ongoing',
       responsibilities: [
-        'Represent Google Gemini on campus as a student advocate.',
-        'Promote AI tool adoption among students and faculty.',
-        'Organize workshops and live demonstrations showcasing Gemini\'s capabilities.',
-        'Act as a student representative for Google\'s AI tools.'
+        'I represent Google Gemini on campus and help students try it out.',
+        'I talk to students and faculty about how they can use Google\'s AI tools.',
+        'I organize workshops and live demos to show what Gemini can do.',
+        'Basically, I\'m the go-to person on campus for anything related to Google AI.'
       ]
     },
     {
@@ -33,12 +33,12 @@ const Experience: React.FC = () => {
       period: 'March 2026 – April 2026',
       type: 'Internship',
       responsibilities: [
-        'Conducted network reconnaissance and host discovery using Nmap.',
-        'Identified open ports, running services, and potential attack surfaces in simulated lab environments.',
-        'Performed network traffic capture and packet analysis using Wireshark.',
-        'Studied TCP/IP communication protocols and anomalous traffic behavior.',
-        'Performed browser exploitation exercises using BeEF.',
-        'Studied client-side attack vectors and defensive security awareness.'
+        'Used Nmap to scan networks, find hosts, and map out what was running.',
+        'Found open ports and running services in lab environments to identify weak spots.',
+        'Captured and analyzed network traffic with Wireshark.',
+        'Studied how TCP/IP works and learned to spot unusual traffic patterns.',
+        'Tried out browser exploitation using BeEF in a controlled lab.',
+        'Learned about client-side attacks and how to defend against them.'
       ]
     }
   ];

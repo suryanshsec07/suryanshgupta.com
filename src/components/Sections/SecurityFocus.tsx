@@ -3,14 +3,14 @@ import { Network, ShieldAlert, Search, Activity, Crosshair, Target, Unlock, Shie
 
 const SecurityFocus: React.FC = () => {
   const focuses = [
-    { name: 'Network Security', icon: <Network size={22} />, desc: 'Understanding network security concepts' },
-    { name: 'Vulnerability Basics', icon: <ShieldAlert size={22} />, desc: 'Learning how common security weaknesses are identified' },
-    { name: 'Security Monitoring', icon: <Search size={22} />, desc: 'Learning to identify suspicious activity' },
-    { name: 'Traffic Analysis', icon: <Activity size={22} />, desc: 'Learning to analyze network traffic' },
-    { name: 'Network Scanning', icon: <Crosshair size={22} />, desc: 'Discovering devices and services' },
-    { name: 'Cybersecurity Basics', icon: <Target size={22} />, desc: 'Building foundational cybersecurity knowledge' },
-    { name: 'Linux & System Security', icon: <Unlock size={22} />, desc: 'Exploring Linux and system security' },
-    { name: 'Basic Exploitation', icon: <Shield size={22} />, desc: 'Learning basic security concepts and attack vectors' },
+    { name: 'Network Security', icon: <Network size={22} />, desc: 'How networks are secured and attacked' },
+    { name: 'Vulnerability Basics', icon: <ShieldAlert size={22} />, desc: 'Spotting common security weaknesses' },
+    { name: 'Security Monitoring', icon: <Search size={22} />, desc: 'Catching suspicious activity in logs and alerts' },
+    { name: 'Traffic Analysis', icon: <Activity size={22} />, desc: 'Reading and filtering packet captures' },
+    { name: 'Network Scanning', icon: <Crosshair size={22} />, desc: 'Finding live hosts and open ports on a network' },
+    { name: 'Cybersecurity Basics', icon: <Target size={22} />, desc: 'The basics: CIA triad, common threats, defense layers' },
+    { name: 'Linux & System Security', icon: <Unlock size={22} />, desc: 'Working with Linux, file permissions, and hardening' },
+    { name: 'Basic Exploitation', icon: <Shield size={22} />, desc: 'Trying out simple exploits in lab environments' },
   ];
 
   return (

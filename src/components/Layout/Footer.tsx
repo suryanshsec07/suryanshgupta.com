@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           © 2026 Suryansh Gupta
         </p>
         <p className="code-font text-secondary" style={{ fontSize: '0.75rem', opacity: 0.6 }}>
-          Built with curiosity, code, and a passion for cybersecurity.
+          Built with late nights, Python, and too many TryHackMe rooms.
         </p>
       </div>
     </footer>

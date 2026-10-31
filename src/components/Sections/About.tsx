@@ -18,15 +18,15 @@ const About: React.FC = () => {
                 {'>'} cat about.txt
               </p>
               <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem' }}>
-                I am Suryansh Gupta, a B.Tech IT student at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, specializing in cybersecurity. My focus is on understanding how networks operate, how they can be compromised, and how to defend them effectively.
+                I'm Suryansh Gupta, a B.Tech IT student at AKGEC, Ghaziabad, focusing on cybersecurity. I'm mostly interested in how networks work, how they can be attacked, and how to protect them.
               </p>
             </div>
             
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem' }}>
-              I have hands-on experience in <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>network scanning</strong>, <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>traffic analysis</strong>, and <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>vulnerability assessment</strong>. I actively develop my knowledge through practical labs, security projects, and continuous learning on platforms like TryHackMe.
+              I've worked with <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>network scanning</strong>, <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>traffic analysis</strong>, and <strong style={{ color: 'var(--accent-primary)', fontWeight: 500 }}>vulnerability assessment</strong> through labs and personal projects. I also practice regularly on TryHackMe to keep learning.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem' }}>
-              Beyond security, I currently serve as a <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Google Student Ambassador</strong>, where I promote AI adoption and lead campus technology initiatives.
+              Outside of security, I'm currently a <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Google Student Ambassador</strong>, where I help students get started with Google's AI tools and organize workshops on campus.
             </p>
           </div>
 
@@ -35,8 +35,8 @@ const About: React.FC = () => {
             {[
               { icon: <Shield size={24} />, title: 'Security Focus', desc: 'Network scanning, traffic analysis, vulnerability assessment.' },
               { icon: <Terminal size={24} />, title: 'Security Tools', desc: 'Nmap, Wireshark, BeEF, Kali Linux.' },
-              { icon: <Award size={24} />, title: 'Leadership', desc: 'Google Student Ambassador for AI initiatives.' },
-              { icon: <BookOpen size={24} />, title: 'Active Learner', desc: 'TryHackMe labs and hands-on projects.' },
+              { icon: <Award size={24} />, title: 'Ambassador Role', desc: 'Google Student Ambassador, helping with AI on campus.' },
+              { icon: <BookOpen size={24} />, title: 'Active Learner', desc: 'TryHackMe labs and personal projects.' },
             ].map((item, i) => (
               <div key={i} className="card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', transform: i % 2 === 1 ? 'translateY(1.5rem)' : 'none' }}>
                 <div className="icon-box" style={{ width: 40, height: 40 }}>

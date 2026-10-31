@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
       <div className="grid-overlay" />
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <h2 className="section-title fade-up">
-          <span className="section-number">05.</span> Skills & Arsenal
+          <span className="section-number">05.</span> Skills & Tools
         </h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>

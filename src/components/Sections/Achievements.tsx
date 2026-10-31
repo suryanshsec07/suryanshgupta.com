@@ -5,19 +5,19 @@ const Achievements: React.FC = () => {
   const items = [
     {
       title: 'Google Student Ambassador',
-      description: 'Selected to represent Google AI tools on campus, advocating for Gemini adoption among students and faculty.',
+      description: 'Got selected to represent Google AI tools on campus. I help students and faculty get started with Gemini.',
       icon: <Star size={22} />,
       highlight: 'Google',
     },
     {
       title: 'Campus Tech Speaker & Organizer',
-      description: 'Organizing hands-on AI workshops and live demonstrations for campus communities.',
+      description: 'I organize hands-on AI workshops and run live demos for students on campus.',
       icon: <Mic size={22} />,
       highlight: 'Workshops',
     },
     {
-      title: 'Active Security Practitioner',
-      description: 'Actively practicing network scanning, enumeration, privilege escalation, and basic exploitation techniques on TryHackMe.',
+      title: 'Security Learner',
+      description: 'I practice network scanning, enumeration, and basic exploitation on TryHackMe. Still learning privilege escalation.',
       icon: <ShieldCheck size={22} />,
       highlight: 'TryHackMe',
     }

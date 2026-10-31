@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
 
             <div style={{ background: 'rgba(5, 8, 7, 0.6)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--accent-border)', marginBottom: '2rem' }}>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.8 }}>
-                A multithreaded Python port scanner with a GUI that scans custom port ranges across target IP addresses and hostnames. Designed for <span className="text-accent">high performance</span> — concurrent threading enables fast scanning of large network surfaces.
+                A multithreaded port scanner I built in Python. It has a Tkinter GUI where you can set custom port ranges and scan IP addresses or hostnames. I used threading to make it <span className="text-accent">scan faster</span>, so you don't have to wait forever on large ranges.
               </p>
             </div>
 

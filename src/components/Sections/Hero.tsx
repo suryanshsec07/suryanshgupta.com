@@ -32,8 +32,7 @@ const Hero: React.FC = () => {
                 <TypingEffect
                   strings={[
                     'Cybersecurity Student',
-                    'Network Security Explorer',
-                    'Vulnerability Researcher',
+                    'Learning Network Security',
                     'Google Student Ambassador',
                   ]}
                   speed={70}
@@ -42,7 +41,7 @@ const Hero: React.FC = () => {
                 />
               </h2>
               <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', lineHeight: 1.8, maxWidth: '560px' }}>
-                I'm Suryansh Gupta, a B.Tech IT student at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, building my skills in cybersecurity through hands-on projects, internships, and practical learning. I'm also a Google Student Ambassador.
+                I'm Suryansh Gupta, a 2nd-year B.Tech IT student at AKGEC, Ghaziabad. I spend most of my time learning cybersecurity, building small security tools, and practicing on TryHackMe. I'm also a Google Student Ambassador.
               </p>
             </div>
 
@@ -108,7 +107,7 @@ const Hero: React.FC = () => {
               <div className="profile-glow" />
               <div className="profile-glow-inner" />
               <div className="profile-image">
-                <img src="/profile.jpg" alt="Suryansh Gupta - Cybersecurity Enthusiast" />
+                <img src="/profile.jpg" alt="Suryansh Gupta - Cybersecurity Student" />
               </div>
             </div>
           </div>
