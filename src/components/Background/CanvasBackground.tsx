@@ -23,12 +23,17 @@ const CanvasBackground: React.FC = () => {
     let columns: number[] = [];
     let colCount = 0;
     const FONT_SIZE = 14;
+    const isMobile = window.innerWidth <= 768;
     const CHARS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF{}[]<>/:;=+-*&#@$!?~'.split('');
 
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       colCount = Math.floor(canvas.width / FONT_SIZE);
+      // On mobile, use fewer columns to save battery
+      if (isMobile) {
+        colCount = Math.floor(colCount / 2);
+      }
       // Preserve existing column positions, add new ones if wider
       const newCols = new Array(colCount).fill(0);
       for (let i = 0; i < Math.min(columns.length, colCount); i++) {

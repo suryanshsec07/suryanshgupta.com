@@ -17,11 +17,11 @@ const Contact: React.FC = () => {
         {/* Resume CTA */}
         <div className="fade-up" style={{ textAlign: 'center', marginBottom: '5rem' }}>
           <p className="code-font text-accent" style={{ fontSize: '0.85rem', marginBottom: '0.5rem', opacity: 0.8 }}>{'>'} want_to_know_more?</p>
-          <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontWeight: 800 }}>Grab My Resume</h2>
+          <h2 className="contact-heading-resume">Grab My Resume</h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '500px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
             Everything listed on this site, but in a one-page PDF.
           </p>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1rem' }}>
+          <a href="/resume.pdf?v2" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1rem' }}>
             <FileText size={20} /> Download Resume <ArrowUpRight size={16} />
           </a>
         </div>
@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
         {/* Contact */}
         <div className="fade-up stagger-1" style={{ textAlign: 'center' }}>
           <p className="section-number" style={{ marginBottom: '0.5rem' }}>09. Get in Touch</p>
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '1.25rem', fontWeight: 800 }}>Say Hi</h2>
+          <h2 className="contact-heading-main">Say Hi</h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '550px', margin: '0 auto 3rem', fontSize: '1.05rem', lineHeight: 1.8 }}>
             I'm happy to chat about cybersecurity, projects, internships, or anything tech-related. Feel free to reach out.
           </p>
@@ -48,8 +48,7 @@ const Contact: React.FC = () => {
                 href={link.href}
                 target={link.href.startsWith('mailto') ? undefined : '_blank'}
                 rel="noopener noreferrer"
-                className="card"
-                style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem 1.5rem', textDecoration: 'none', minWidth: '220px' }}
+                className="card contact-card"
               >
                 <div className="icon-box" style={{ width: 36, height: 36 }}>
                   {link.icon}

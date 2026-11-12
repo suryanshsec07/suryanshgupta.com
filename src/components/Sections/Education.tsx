@@ -9,15 +9,15 @@ const Education: React.FC = () => {
           <span className="section-number">08.</span> Education
         </h2>
 
-        <div className="card fade-up stagger-1" style={{ maxWidth: '800px', padding: '2rem 2.5rem', position: 'relative', overflow: 'hidden' }}>
+        <div className="card fade-up stagger-1 edu-card" style={{ maxWidth: '800px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--accent-primary), transparent 60%)' }} />
           
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.25rem' }}>
+          <div className="edu-header">
             <div>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', fontWeight: 700 }}>Bachelor of Technology (B.Tech)</h3>
               <p className="text-accent" style={{ fontSize: '1rem', fontWeight: 600 }}>Information Technology</p>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', alignItems: 'flex-end' }}>
+            <div className="edu-meta">
               <span className="code-font text-secondary" style={{ fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                 <Calendar size={13} /> 2025–2029
               </span>

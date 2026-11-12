@@ -16,7 +16,7 @@ const Certifications: React.FC = () => {
           <span className="section-number">06.</span> Certifications
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1rem' }}>
+        <div className="responsive-grid-320">
           {certs.map((cert, i) => (
             <div key={i} className={`card cert-card fade-up stagger-${(i % 4) + 1}`} style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', padding: '1.5rem 2rem', position: 'relative' }}>
               {/* Color accent dot */}

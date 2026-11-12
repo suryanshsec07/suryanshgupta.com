@@ -3,14 +3,17 @@ import { ChevronRight, FileText, Mail, Shield } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../Icons';
 import TypingEffect from '../TypingEffect';
 
+// Change this version string every time you update resume.pdf to bust browser cache
+const RESUME_VERSION = 'v2';
+
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: '6rem' }}>
+    <section id="hero" className="section hero-section">
       <div className="container">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '4rem', flexWrap: 'wrap' }}>
+        <div className="hero-layout">
           
           {/* Left: Text Content */}
-          <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
+          <div className="hero-text">
             <div className="fade-up stagger-1">
               <div className="status-badge" style={{ marginBottom: '1.5rem' }}>
                 <span className="pulse-dot" />
@@ -22,13 +25,13 @@ const Hero: React.FC = () => {
               <p className="code-font text-accent" style={{ marginBottom: '0.75rem', fontSize: '0.95rem', opacity: 0.9 }}>
                 $ whoami
               </p>
-              <h1 style={{ fontSize: 'clamp(2.8rem, 7vw, 4.5rem)', marginBottom: '0.75rem', letterSpacing: '-0.03em', fontWeight: 800 }}>
+              <h1 style={{ fontSize: 'clamp(2.2rem, 7vw, 4.5rem)', marginBottom: '0.75rem', letterSpacing: '-0.03em', fontWeight: 800 }}>
                 Suryansh Gupta
               </h1>
             </div>
 
             <div className="fade-up stagger-3">
-              <h2 style={{ fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', color: 'var(--text-secondary)', marginBottom: '1.5rem', fontWeight: 500, minHeight: '2.2em' }}>
+              <h2 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.8rem)', color: 'var(--text-secondary)', marginBottom: '1.5rem', fontWeight: 500, minHeight: '2.2em' }}>
                 <TypingEffect
                   strings={[
                     'Cybersecurity Student',
@@ -40,16 +43,16 @@ const Hero: React.FC = () => {
                   pause={2500}
                 />
               </h2>
-              <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', lineHeight: 1.8, maxWidth: '560px' }}>
+              <p className="hero-desc">
                 I'm Suryansh Gupta, a 2nd-year B.Tech IT student at AKGEC, Ghaziabad. I spend most of my time learning cybersecurity, building small security tools, and practicing on TryHackMe. I'm also a Google Student Ambassador.
               </p>
             </div>
 
-            <div className="fade-up stagger-4" style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+            <div className="fade-up stagger-4 hero-buttons">
               <a href="#projects" className="btn btn-primary">
                 View My Work <ChevronRight size={18} />
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+              <a href={`/resume.pdf?${RESUME_VERSION}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 <FileText size={18} /> Resume
               </a>
               <a href="#contact" className="btn btn-outline">
@@ -57,7 +60,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
-            <div className="fade-up stagger-5" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+            <div className="fade-up stagger-5 hero-socials">
               <span className="code-font text-secondary" style={{ fontSize: '0.85rem', opacity: 0.7 }}>// find_me:</span>
               <div style={{ display: 'flex', gap: '1rem' }}>
                 {[
@@ -71,28 +74,7 @@ const Hero: React.FC = () => {
                     target={link.href !== '#' ? '_blank' : undefined}
                     rel="noopener noreferrer"
                     aria-label={link.label}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      width: 40,
-                      height: 40,
-                      borderRadius: 8,
-                      border: '1px solid rgba(255,255,255,0.08)',
-                      color: 'var(--text-secondary)',
-                      transition: 'all 0.3s',
-                      background: 'rgba(255,255,255,0.02)',
-                    }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                      e.currentTarget.style.color = 'var(--accent-primary)';
-                      e.currentTarget.style.borderColor = 'var(--accent-primary)';
-                      e.currentTarget.style.boxShadow = '0 0 15px rgba(57,255,136,0.15)';
-                    }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                      e.currentTarget.style.color = 'var(--text-secondary)';
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
+                    className="social-icon-link"
                   >
                     {link.icon}
                   </a>
@@ -102,7 +84,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right: Profile Photo */}
-          <div className="fade-up stagger-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: '0 0 auto' }}>
+          <div className="fade-up stagger-3 hero-profile-wrap">
             <div className="profile-container">
               <div className="profile-glow" />
               <div className="profile-glow-inner" />

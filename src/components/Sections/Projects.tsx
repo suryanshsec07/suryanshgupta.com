@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
         </h2>
 
         <div className="fade-up stagger-1">
-          <div className="card" style={{ padding: '3rem', position: 'relative', overflow: 'hidden' }}>
+          <div className="card project-card" style={{ position: 'relative', overflow: 'hidden' }}>
             {/* Top green accent line */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--accent-primary), transparent 80%)' }} />
             

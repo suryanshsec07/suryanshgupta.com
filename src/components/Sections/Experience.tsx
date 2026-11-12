@@ -53,8 +53,8 @@ const Experience: React.FC = () => {
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={index} className={`timeline-item fade-up stagger-${index + 1}`}>
-              <div className="card" style={{ padding: '2rem 2.5rem' }}>
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.5rem' }}>
+              <div className="card exp-card">
+                <div className="exp-header">
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
                       <div className="icon-box" style={{ width: 36, height: 36, borderRadius: 8 }}>
@@ -66,7 +66,7 @@ const Experience: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', alignItems: 'flex-end' }}>
+                  <div className="exp-meta">
                     <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: 'var(--accent-primary)', background: 'var(--accent-muted)', padding: '0.2rem 0.75rem', borderRadius: '12px', fontFamily: 'var(--font-mono)', fontWeight: 500 }}>
                       {exp.type}
                     </span>

@@ -1,0 +1,9 @@
+# Prevent aggressive caching on the resume PDF so updates are picked up
+/resume.pdf
+  Cache-Control: no-cache, must-revalidate
+  Pragma: no-cache
+
+# Static hashed assets (JS/CSS with content hashes) can be cached forever
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+

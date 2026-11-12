@@ -20,7 +20,7 @@ const SecurityFocus: React.FC = () => {
           <span className="section-number">04.</span> Security Focus
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '1rem' }}>
+        <div className="responsive-grid-270">
           {focuses.map((focus, i) => (
             <div key={i} className={`card fade-up stagger-${(i % 4) + 1}`} style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', padding: '1.25rem 1.5rem', cursor: 'default' }}>
               <div className="icon-box">

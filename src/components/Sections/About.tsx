@@ -10,7 +10,7 @@ const About: React.FC = () => {
           <span className="section-number">01.</span> About Me
         </h2>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'start' }} className="fade-up stagger-1">
+        <div className="about-grid fade-up stagger-1">
           {/* Bio */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--accent-border)', borderRadius: '12px', padding: '2rem', borderLeft: '3px solid var(--accent-primary)' }}>
@@ -31,14 +31,14 @@ const About: React.FC = () => {
           </div>
 
           {/* Cards Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="about-cards-grid">
             {[
               { icon: <Shield size={24} />, title: 'Security Focus', desc: 'Network scanning, traffic analysis, vulnerability assessment.' },
               { icon: <Terminal size={24} />, title: 'Security Tools', desc: 'Nmap, Wireshark, BeEF, Kali Linux.' },
               { icon: <Award size={24} />, title: 'Ambassador Role', desc: 'Google Student Ambassador, helping with AI on campus.' },
               { icon: <BookOpen size={24} />, title: 'Active Learner', desc: 'TryHackMe labs and personal projects.' },
             ].map((item, i) => (
-              <div key={i} className="card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', transform: i % 2 === 1 ? 'translateY(1.5rem)' : 'none' }}>
+              <div key={i} className="card about-card-item" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <div className="icon-box" style={{ width: 40, height: 40 }}>
                   {item.icon}
                 </div>

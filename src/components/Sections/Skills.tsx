@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
           <span className="section-number">05.</span> Skills & Tools
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+        <div className="responsive-grid-320">
           {skillCategories.map((category, index) => (
             <div key={index} className={`card fade-up stagger-${(index % 4) + 1}`} style={{ padding: '2rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>

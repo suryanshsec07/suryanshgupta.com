@@ -32,7 +32,7 @@ const Achievements: React.FC = () => {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem', maxWidth: '800px' }}>
           {items.map((item, i) => (
-            <div key={i} className={`card fade-up stagger-${i + 1}`} style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', padding: '1.75rem 2rem' }}>
+            <div key={i} className={`card fade-up stagger-${i + 1} achievement-card`}>
               <div className="icon-box">
                 {item.icon}
               </div>
